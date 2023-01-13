@@ -33,15 +33,24 @@ function imc()
 
         if(calculo < 18.5){
             resultado.innerHTML = "Abaixo do Peso;" +calculo;
-        }else if(calculo >= 18.5 && calculo <= 24.9){
-            resultado.innerHTML = "Peso Normal;" +calculo; 
-        }else if(calculo >= 25 && calculo <= 29.9){
-            resultado.innerHTML = "Sobre Peso;" +calculo;    
-        }else if(calculo >= 30 && calculo <= 34.9){
-            resultado.innerHTML = "Obesidade Grau 1;" +calculo; 
-        }else if(calculo >= 35 && calculo <= 39.9){
-            resultado.innerHTML = "Obesidade Grau 2;" +calculo; 
-        }else{
-            resultado.innerHTML = "Obesidade Grau 3;" +calculo; 
+            return;
         }
+        if(calculo >= 18.5 && calculo <= 24.9){
+            resultado.innerHTML = "Peso Normal;" +calculo;
+            return; 
+        }
+        if(calculo >= 25 && calculo <= 29.9){
+            resultado.innerHTML = "Sobre Peso;" +calculo;
+            return;    
+        }
+         if(calculo >= 30 && calculo <= 34.9){
+            resultado.innerHTML = "Obesidade Grau 1;" +calculo; 
+            return;
+        }
+        if(calculo >= 35 && calculo <= 39.9){
+            resultado.innerHTML = "Obesidade Grau 2;" +calculo;
+            return; 
+        }
+            resultado.innerHTML = "Obesidade Grau 3;" +calculo; 
+        
 }
